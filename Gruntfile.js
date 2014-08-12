@@ -103,6 +103,14 @@ module.exports = function (grunt) {
             src: [
               '*.html'
             ]
+          },
+          {
+            expand: true,
+            cwd: '<%= project.path.client %>/js/lib',
+            dest: '<%= project.path.temp %>/js/lib',
+            src: [
+                '*.js'
+            ]
           }
         ]
       },
@@ -134,6 +142,14 @@ module.exports = function (grunt) {
             dest: '<%= project.path.dist %>',
             src: [
               '*.html'
+            ]
+          },
+          {
+            expand: true,
+            cwd: '<%= project.path.client %>/js/lib',
+            dest: '<%= project.path.dist %>/js/lib',
+            src: [
+                '*.js'
             ]
           }
         ]

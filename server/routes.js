@@ -34,6 +34,7 @@ exports.register = function (app, restify) {
   s.get('/express', c.home.express);
   s.get('/page', c.home.page);
   s.get('/task', c.home.task);
+  s.get('/tracking', c.tracking.index);
 
   // Auth
   s.get('/auth/facebook', c.auth.facebook);
